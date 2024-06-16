@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .container{
+            height:100vh;
+            width:100vw;
+            background-color: black;
+            position: relative;
+        }
+
+        .box{
+            height:200px;
+            width:200px;
+            background-color: yellow;
+            animation-name:move-box;
+            animation-duration: 5s;
+            position: absolute;
+        }
+
+        @keyframes move-box {
+            0%{
+                left:0px;
+                top:0px;
+            }
+
+            33%{
+                left:0px;
+                top:100vh;
+                transform: translateY(-100%);
+            }
+
+            66%{
+                left:100vw;
+                top:100vh;
+                transform: translate(-100% ,-100%);
+            }
+
+            100%{
+                left:100vw;
+                top:0px;
+                transform: translateX(-100%);
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    
+</body>
+</html>
