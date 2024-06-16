@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color:orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Playwrite CO", cursive;
+}
+
+h1{
+    /* text-transform: uppercase; */
+    font-size:3rem;
+    position:relative;
+}
+
+h1::after{
+    content:" ❤️";
+    color:black;
+    background-color: black;
+    position: absolute;
+    right:0;
+    width:100%;
+    
+    animation:typing 5s  infinite alternate ;
+    animation-delay: 5s;
+    
+}
+
+@keyframes typing{
+    100%{
+        width:0%;
+    }
+}
+
