@@ -22,32 +22,48 @@
             width:200px;
             background-color: yellow;
             animation-name:move-box;
-            animation-duration: 5s;
+            animation-duration: 5s; 
+            animation-iteration-count: infinite; 
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
             position: absolute;
+            animation-fill-mode: forwards;
+            border-radius: 50%;
+
+
+            /* short hand */
+            /* animation:move-box 3s linear 1s 3 alternate forwards; */
         }
 
         @keyframes move-box {
             0%{
                 left:0px;
                 top:0px;
+                background-color: blue;
             }
 
             33%{
                 left:0px;
-                top:100vh;
+                top:100%;
                 transform: translateY(-100%);
+                border-radius: 50%;
+                background-color: red;
+                background-color: yellow;
             }
 
             66%{
-                left:100vw;
-                top:100vh;
+                left:100%;
+                top:100%;
                 transform: translate(-100% ,-100%);
+                background-color: red;
             }
 
             100%{
-                left:100vw;
+                left:100%;
                 top:0px;
                 transform: translateX(-100%);
+                /* border-radius: 20%; */
+                background-color: orange;
             }
 
             
