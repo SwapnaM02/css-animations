@@ -13,27 +13,33 @@
         .box{
             height:200px;
             width:200px;
-            transition-property: width;
+            transition-property: width background-color;
             transition-duration: 3s;
         }
 
         .one{
             background-color: coral;
             transition-duration: 3s;
+            transition-timing-function: linear;
+
         }
 
         .two{
             background-color: aqua;
             transition-duration: 5s;
+            transition-timing-function: ease-in;
         }
         .three{
             background-color: yellowgreen;
+            transition-timing-function: ease-out;
         }
 
         .box:hover{
             /* width:100vw; */
 
-            transform: translateX(600px);
+            /* transform: translateX(600px); */
+            background-color: black;
+            width:100vw;
         }
 
 
